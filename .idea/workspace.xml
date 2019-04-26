@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c4bcc34c-f0e4-4102-b08f-f8d2a1310286" name="Default Changelist" comment="" />
+    <list default="true" id="c4bcc34c-f0e4-4102-b08f-f8d2a1310286" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/inputMandelbrot.txt" beforeDir="false" afterPath="$PROJECT_DIR$/inputMandelbrot.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mandelbrot/Mandelbrot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mandelbrot/Mandelbrot.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +21,7 @@
         <entry file="file://$PROJECT_DIR$/inputMandelbrot.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret selection-end-line="6" selection-end-column="3" />
+              <caret column="3" selection-start-column="3" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -32,24 +35,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Mandelbrot/Mandelbrot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="118" column="23" lean-forward="true" selection-start-line="118" selection-start-column="23" selection-end-line="118" selection-end-column="23" />
+            <state relative-caret-position="416">
+              <caret line="115" column="56" lean-forward="true" selection-start-line="115" selection-start-column="56" selection-end-line="115" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3188#3189#0" expanded="true" />
+                <element signature="e#3149#3150#0" expanded="true" />
+                <element signature="e#3190#3191#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="74" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -57,25 +52,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Mandelbrot/FilledJulia.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
+            <state relative-caret-position="263">
+              <caret line="121" column="80" lean-forward="true" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2143#2144#0" expanded="true" />
-                <element signature="e#2182#2183#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/output_image_j.ppm">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/output_image.ppm">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -130,14 +113,15 @@
         <option value="$PROJECT_DIR$/input.txt" />
         <option value="$PROJECT_DIR$/inputJulia.txt" />
         <option value="$PROJECT_DIR$/src/Mandelbrot/FilledJulia.java" />
-        <option value="$PROJECT_DIR$/src/Mandelbrot/Mandelbrot.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/inputMandelbrot.txt" />
+        <option value="$PROJECT_DIR$/src/Mandelbrot/Mandelbrot.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-327" />
-    <option name="y" value="761" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="111" />
+    <option name="y" value="-26" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -193,7 +177,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FilledJulia">
+  <component name="RunManager" selected="Application.Mandelbrot">
     <configuration name="Complex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Mandelbrot.Complex" />
       <module name="Mandelbrot" />
@@ -235,8 +219,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FilledJulia" />
         <item itemvalue="Application.Mandelbrot" />
+        <item itemvalue="Application.FilledJulia" />
         <item itemvalue="Application.Complex" />
       </list>
     </recent_temporary>
@@ -255,9 +239,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-327" y="761" width="1400" height="1000" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35373133" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2563966" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -266,7 +251,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35063437" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34994584" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -298,6 +283,9 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/output_image_j.ppm">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/output_image.ppm">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -324,25 +312,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output_image_j.ppm">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="74" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="74" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/inputMandelbrot.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mandelbrot/FilledJulia.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="86" column="17" selection-start-line="86" selection-start-column="17" selection-end-line="86" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2143#2144#0" expanded="true" />
-            <element signature="e#2182#2183#0" expanded="true" />
-          </folding>
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -353,21 +333,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Mandelbrot/Mandelbrot.java">
+    <entry file="file://$PROJECT_DIR$/src/Mandelbrot/FilledJulia.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="118" column="23" lean-forward="true" selection-start-line="118" selection-start-column="23" selection-end-line="118" selection-end-column="23" />
+        <state relative-caret-position="263">
+          <caret line="121" column="80" lean-forward="true" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3188#3189#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/Mandelbrot/Mandelbrot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="74" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
+        <state relative-caret-position="416">
+          <caret line="115" column="56" lean-forward="true" selection-start-line="115" selection-start-column="56" selection-end-line="115" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3149#3150#0" expanded="true" />
+            <element signature="e#3190#3191#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

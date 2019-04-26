@@ -83,6 +83,7 @@ public class Mandelbrot {
     }
 
     public void run(String outputFileName) {
+        final long startTime = System.currentTimeMillis();
         File outputFile = new File(outputFileName);
         PrintWriter out = null;
         try {
@@ -112,7 +113,8 @@ public class Mandelbrot {
             out.flush();
             out.close();
         }
-        System.out.println("Finished running.");
+        final long endTime = System.currentTimeMillis();
+        System.out.println("Finished running in "+(endTime-startTime)/1000+"s");
 
     }
 
