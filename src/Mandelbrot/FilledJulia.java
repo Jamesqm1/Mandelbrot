@@ -6,6 +6,9 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class FilledJulia {
+    private final int[][] colors = {{66, 30, 15}, {25, 7, 26}, {9, 1, 47}, {4, 4, 73}, {0, 7, 100}, {12, 44, 138}, {24, 82, 177},
+            {57, 125, 209}, {134, 181, 229}, {211, 236, 248}, {241, 233, 191}, {248, 201, 95}, {255, 170, 0},
+            {204, 128, 0}, {153, 87, 0}, {106, 52, 3}};
     private double xRange;
     private double yRange;
     private double maxReal;
@@ -102,10 +105,18 @@ public class FilledJulia {
 
                     Complex z = new Complex(mapToReal(x), mapToImag(y));
 
+                    int r, g, b;
                     int n = findJuliaNumber(z);
-                    int r = (n % 256);
-                    int g = (n % 256);
-                    int b = (n % 256);
+                    if (n < maxIterations && n > 0) {
+                        int i = n % 16;
+                        int[] rgb = colors[i];
+                        r = rgb[0];
+                        g = rgb[1];
+                        b = rgb[2];
+
+                    } else {
+                        r = g = b = 0;
+                    }
 
                     out.print(r + " " + g + " " + b + " ");
                 }

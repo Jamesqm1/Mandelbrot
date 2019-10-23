@@ -66,11 +66,6 @@ public class Mandelbrot {
 
     }
 
-    public static void main(String[] args) {
-        Mandelbrot test = new Mandelbrot("inputMandelbrot.txt");
-        test.run("mandelbrot_image_colored.ppm");
-    }
-
     public double mapToReal(int x) {
         return x * (xRange / imageW) + minReal;
     }
@@ -79,12 +74,12 @@ public class Mandelbrot {
         return y * (yRange / imageH) + minImag;
     }
 
-    public int findMandelbrotNumber(Complex c) {
+    public int findMandelbrotNumber(Complex c, int x) {
         int i = 0;
         Complex z = new Complex(0, 0);
         while (i < maxIterations && z.abs() <= 2) {
             // iterate z^2 + c
-            z = z.exp(2).plus(c);
+            z = z.exp(x).plus(c);
             i++;
         }
         return i;
@@ -105,7 +100,7 @@ public class Mandelbrot {
 
                     Complex z = new Complex(mapToReal(x), mapToImag(y));
                     int r, g, b;
-                    int n = findMandelbrotNumber(z);
+                    int n = findMandelbrotNumber(z, 2);
                     if (n < maxIterations && n > 0) {
                         int i = n % 16;
                         int[] rgb = colors[i];
@@ -128,11 +123,57 @@ public class Mandelbrot {
             out.close();
         }
         final long endTime = System.currentTimeMillis();
-        System.out.println("Finished running in " + (endTime - startTime) / 1000 + "s");
+        System.out.println("Finished running in " + (double)(endTime - startTime) / 1000 + "s");
 
     }
 
-    public void run() {
-        run("output_image_m.ppm");
+    public void run(String name, int n) {
+        run(name+"/output_image_"+n+".ppm");
+    }
+
+    public void zoom(double scale, double x, double y){
+        maxReal -= x;
+        minReal -= x;
+        maxImag -= y;
+        minImag -= y;
+
+        maxReal /= scale;
+        minReal /= scale;
+        maxImag /= scale;
+        minImag /= scale;
+
+        maxReal += x;
+        minReal += x;
+        maxImag += y;
+        minImag += y;
+
+        recalculate();
+    }
+
+    public void zoomCenter(double scale){
+        maxReal/=scale;
+        minReal/=scale;
+        maxImag/=scale;
+        minImag/=scale;
+        recalculate();
+    }
+
+    public void recalculate(){
+        xRange = maxReal - minReal;
+        yRange = maxImag - minImag;
+    }
+
+
+    //MAIN RUNNER
+    public static void main(String[] args) {
+        Mandelbrot test = new Mandelbrot("inputMandelbrot.txt");
+
+        System.out.println("Image number");
+        for(int i = 0; i < 100; i++){
+            System.out.print(i+": ");
+            test.run("test",i);
+            test.zoom(1.1,-2,0);
+        }
+
     }
 }
